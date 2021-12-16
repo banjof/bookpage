@@ -43,7 +43,7 @@
       return r
     }({
       1: [function (t, e, n) {
-        function r() {}
+        function r() { }
 
         function i(t, e, n, r) {
           return function () {
@@ -60,13 +60,13 @@
           d = NREUM;
         "undefined" == typeof window.newrelic && (newrelic = d);
         var p = ["setPageViewName", "setCustomAttribute", "setErrorHandler", "finished", "addToTrace",
-            "inlineHit", "addRelease"
-          ],
+          "inlineHit", "addRelease"
+        ],
           l = "api-",
           v = l + "ixn-";
         a(p, function (t, e) {
-            d[e] = i(l, e, !0, "api")
-          }), d.addPageAction = i(l, "addPageAction", !0), d.setCurrentRouteName = i(l, "routeName", !0), e
+          d[e] = i(l, e, !0, "api")
+        }), d.addPageAction = i(l, "addPageAction", !0), d.setCurrentRouteName = i(l, "routeName", !0), e
           .exports = newrelic, d.interaction = function () {
             return (new r).get()
           };
@@ -82,8 +82,8 @@
                 } catch (t) {
                   throw f.emit("fn-err", [arguments, this, t], n), t
                 } finally {
-                  f.emit("fn-end", [u.now()], n)
-                }
+                    f.emit("fn-end", [u.now()], n)
+                  }
               }
           }
         };
@@ -115,7 +115,7 @@
             }
           });
           window.addEventListener("testPassive", null, i), window.removeEventListener("testPassive", null, i)
-        } catch (o) {}
+        } catch (o) { }
         e.exports = function (t) {
           return r ? {
             passive: !0,
@@ -152,7 +152,7 @@
       5: [function (t, e, n) {
         function r() {
           return c.exists && performance.now ? Math.round(performance.now()) : (o = Math.max((new Date)
-          .getTime(), o)) - a
+            .getTime(), o)) - a
         }
 
         function i() {
@@ -208,7 +208,7 @@
           "hidden" === t && (f = l.now(), p("pageHide", [f]))
         }
         if (!("init" in NREUM && "page_view_timing" in NREUM.init && "enabled" in NREUM.init.page_view_timing &&
-            NREUM.init.page_view_timing.enabled === !1)) {
+          NREUM.init.page_view_timing.enabled === !1)) {
           var f, u, s, d, p = t("handle"),
             l = t("loader"),
             v = t(9),
@@ -220,20 +220,20 @@
               u.observe({
                 entryTypes: ["paint"]
               })
-            } catch (h) {}
+            } catch (h) { }
             s = new PerformanceObserver(i);
             try {
               s.observe({
                 entryTypes: ["largest-contentful-paint"]
               })
-            } catch (h) {}
+            } catch (h) { }
             d = new PerformanceObserver(o);
             try {
               d.observe({
                 type: "layout-shift",
                 buffered: !0
               })
-            } catch (h) {}
+            } catch (h) { }
           }
           if ("addEventListener" in document) {
             var y = !1,
@@ -281,8 +281,8 @@
         var o, a, c;
         "undefined" != typeof document.hidden ? (o = "hidden", a = "visibilitychange", c = "visibilityState") :
           "undefined" != typeof document.msHidden ? (o = "msHidden", a = "msvisibilitychange") : "undefined" !=
-          typeof document.webkitHidden && (o = "webkitHidden", a = "webkitvisibilitychange", c =
-            "webkitVisibilityState")
+            typeof document.webkitHidden && (o = "webkitHidden", a = "webkitvisibilitychange", c =
+              "webkitVisibilityState")
       }, {}],
       10: [function (t, e, n) {
         function r(t, e) {
@@ -310,7 +310,7 @@
         }
       }, {}],
       ee: [function (t, e, n) {
-        function r() {}
+        function r() { }
 
         function i(t) {
           function e(t) {
@@ -395,7 +395,7 @@
               writable: !0,
               enumerable: !1
             }), r
-          } catch (o) {}
+          } catch (o) { }
           return t[e] = r, r
         }
         var i = Object.prototype.hasOwnProperty;
@@ -489,7 +489,7 @@
         if (!E) {
           t(1), t(7), g[h] ? (g[h]("DOMContentLoaded", o, l(!1)), m[h]("load", r, l(!1))) : (g[y](
             "onreadystatechange", i), m[y]("onload", r)), c("mark", ["firstbyte", a.getLastTimestamp()], null,
-            "api");
+              "api");
           var T = 0
         }
       }, {}],
@@ -540,7 +540,7 @@
           e || (e = s);
           try {
             e.emit("internal-error", t)
-          } catch (n) {}
+          } catch (n) { }
         }
 
         function o(t, e, n) {
@@ -612,7 +612,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://obamabook.com/wp-content/uploads/2020/08/FBMCoverFull.jpeg" />
   <meta name="twitter:site" content="@opeketefoundation" />
-  <script type="application/ld+json" class="yoast-schema-graph">
+  <!-- <script type="application/ld+json" class="yoast-schema-graph">
     {
       "@context": "https://schema.org",
       "@graph": [{
@@ -697,7 +697,7 @@
         }]
       }]
     }
-  </script>
+  </script> -->
   <!-- / Yoast SEO plugin. -->
 
 
@@ -749,9 +749,9 @@
         t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t)
       }
       for (o = Array("flag", "emoji"), t.supports = {
-          everything: !0,
-          everythingExceptFlag: !0
-        }, r = 0; r < o.length; r++) t.supports[o[r]] = function (e) {
+        everything: !0,
+        everythingExceptFlag: !0
+      }, r = 0; r < o.length; r++) t.supports[o[r]] = function (e) {
         if (!p || !p.fillText) return !1;
         switch (p.textBaseline = "top", p.font = "600 32px Arial", e) {
           case "flag":
@@ -777,7 +777,7 @@
           e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function () {
             "complete" === a.readyState && t.readyCallback()
           })), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n
-          .wpemoji)))
+            .wpemoji)))
     }(window, document, window._wpemojiSettings);
   </script>
   <style type="text/css">
@@ -813,8 +813,7 @@
   <link rel="icon" href="wp-content/uploads/2020/08/FBMCoverFull.jpeg" sizes="32x32" />
   <link rel="icon" href="wp-content/uploads/2020/08/FBMCoverFull.jpeg" sizes="192x192" />
   <link rel="apple-touch-icon" href="wwp-content/uploads/2020/08/FBMCoverFull.jpeg" />
-  <meta name="msapplication-TileImage"
-    content="wp-content/uploads/2020/08/FBMCoverFull.jpeg" />
+  <meta name="msapplication-TileImage" content="wp-content/uploads/2020/08/FBMCoverFull.jpeg" />
 
 
   <meta name="title" property="og:title" content="FLORENCE | Daughter of Akegun " />
@@ -835,8 +834,9 @@
     <nav id="nav">
       <div class="nav__title"><a href="index.html">Florence | Daughter of Akegun</a></div>
       <nav id="main-nav" role="navigation" style="display:none;">
-        <a target="" href="https://www.opeketefoundation.org/" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-190">  Her Passion</a>
-                                            <!-- <span class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-209 menu-item-has-children">Other Books -->
+        <a target="" href="https://www.opeketefoundation.org/"
+          class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-190"> Her Passion</a>
+        <!-- <span class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-209 menu-item-has-children">Other Books -->
         <!-- <ul>
                                             <li><a target="_blank" href="https://renegadesbook.com/?ref=PRH55BF5E5361&amp;aid=randohouseinc1281-20&amp;linkid=PRH55BF5E5361" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-210">Renegades: Born in the USA</a></li>
                                             <li><a target="_blank" href="http://penguinrandomhouse.com/books/4126/dreams-from-my-father-adapted-for-young-adults-by-barack-obama/?ref=PRH39952BC1FF&amp;aid=1871&amp;linkid=PRH39952BC1FF" class=" menu-item menu-item-type-custom menu-item-object-custom menu-item-211">Dreams from My Father (Adapted for Young Adults)</a></li>
@@ -874,10 +874,10 @@
           <h2 class="header__copy_title" style="font-size: 15px;">Available in E-book, Audio Book, Paper Back </h2>
           <button class="header__copy_button btn btn_dark" id="retailers_btn">Pre-Order Now</button>
           <!-- <button class="header__copy_button btn btn_dark"  onclick="payWithPaystack()"> Pay </button> -->
-          <h2 class="header__copy_title" style="font-size: 15px;" >Release Date: 8th March 2022</h2>
-          <p class="header__copy_title" id="countdown" style="font-size:300%;">  </p>
+          <h2 class="header__copy_title" style="font-size: 15px;">Release Date: 8th March 2022</h2>
+          <p class="header__copy_title" id="countdown" style="font-size:300%;"> </p>
           <div>
-       
+
           </div>
         </div>
       </div>
@@ -898,31 +898,33 @@
                 alt="FLORENCE | Daughter of Akegun Book Cover" />
               <div style="display:none;" itemprop="name">FLORENCE | Daughter of Akegun</div>
               <div style="display:none;" itemprop="author">Florence B Makanjuola</div>
-    
+
               <!-- <div style="display:none;" itemprop="Publisher">The Crown Publishing Group</div> -->
               <!-- <div style="display:none;" itemprop="ISBN">9781524763169</div> -->
             </div>
-            <div class="retailer__links"> 
-                       <a class = "retailer__links_link" href="https://paystack.shop/daughterofakegun">Paystack</a>
-          <!-- <a class = "retailer__links_link" href="https://florencebmakanjuola.bumpa.shop/products/florence-daughter-of-akegun/101333">Payment Option 2</a> -->
-          <a class = "retailer__links_link" href="#">Pre-Order on Kindle</a>
-          <a class = "retailer__links_link" href="#">Pre-Order on Hard Back</a>
-          <a class = "retailer__links_link" href="#">Pre-Order on Audio Book</a>
+            <div class="retailer__links">
+              <a class="retailer__links_link" href="https://paystack.shop/daughterofakegun">Paperback</a>
+              <!-- <a class = "retailer__links_link" href="https://florencebmakanjuola.bumpa.shop/products/florence-daughter-of-akegun/101333">Payment Option 2</a> -->
+              <a class="retailer__links_link" href="https://www.amazon.com/dp/B09NMC1V65 ">Pre-Order on Amazon (E-Book)</a>
+              <a class="retailer__links_link" href="# ">Pre-Order on Amazon (Audio Book)</a>
+              <!-- <a class="retailer__links_link" href="#">Pre-Order on Hard Back</a>
+              <a class="retailer__links_link" href="#">Pre-Order on Audio Book</a> -->
             </div>
-   
+
           </div>
         </div>
       </div>
       <div id="about">
-          <div class="about" style="background-color: black; text-align: center;font-size: 30px;"> 
-          <p><strong>A simple, but powerful story about life<br/> in all its colors, hope, love, loss, family, sacrifice,
+        <div class="about" style="background-color: black; text-align: center;font-size: 30px;">
+          <p><strong>A simple, but powerful story about life<br /> in all its colors, hope, love, loss, family,
+              sacrifice,
               and triumph.</strong></p>
         </div>
         <div class="container">
           <div class="about" role="main" aria-level="1.4">
             <img src="wp-content/uploads/2020/08/FBMCoverFull.jpeg" alt="FLORENCE by Florence B Makanjuola book cover"
               class="about__book_cover" />
-            
+
             <p>For as long as Florence Bamidele Makanjuola could recollect, her doting father had spoken glowingly of
               another Florence,
               who lived in a different lifetime, years before her birth. A Florence, full of good works and compassion
@@ -941,7 +943,8 @@
               decades of an extraordinary life.
               Testimonials from family, friends and well-wishers add colour to the character bringing to light her life
               of exemplary impact.</p>
-             <p><em> <strong>Florence: Daughter of Akegun </strong></em> is a simple, but powerful story about life in all its colors, hope, love,
+            <p><em> <strong>Florence: Daughter of Akegun </strong></em> is a simple, but powerful story about life in
+              all its colors, hope, love,
               loss, family, sacrifice, and triumph.</p>
 
             <!-- <div class="video-container">
@@ -955,11 +958,11 @@
           </div>
         </div>
       </div>
-     
+
       <section id="social">
         <div class="container">
           <div class="social">
-          
+
             <div class="follow-language">Follow Opekete Foundation</div>
             <div class="social-icons">
               <svg width="0" height="0">
@@ -1028,26 +1031,27 @@
       </div>
     </div>
   </footer>
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://js.paystack.co/v1/inline.js"></script>
-    <script src="app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src="https://js.paystack.co/v1/inline.js"></script>
+  <script src="app.js"></script>
   <script type="text/javascript">
     var utag_data = {}
   </script>
 
   <!-- Loading script asynchronously -->
   <script type="text/javascript">
-    (function (a, b, c, d) {
-      a = '../tags.tiqcdn.com/utag/random/rhcorp-author/prod/utag.js';
-      b = document;
-      c = 'script';
-      d = b.createElement(c);
-      d.src = a;
-      d.type = 'text/java' + c;
-      d.async = true;
-      a = b.getElementsByTagName(c)[0];
-      a.parentNode.insertBefore(d, a);
-    })();
+      (function (a, b, c, d) {
+        a = '../tags.tiqcdn.com/utag/random/rhcorp-author/prod/utag.js';
+        b = document;
+        c = 'script';
+        d = b.createElement(c);
+        d.src = a;
+        d.type = 'text/java' + c;
+        d.async = true;
+        a = b.getElementsByTagName(c)[0];
+        a.parentNode.insertBefore(d, a);
+      })();
   </script>
   <script type='text/javascript' id='app-js-extra'>
     /* <![CDATA[ */

@@ -18,6 +18,8 @@
   min-width: 300px
 }
 
+
+
 .wp-block-button__link {
   color: #fff;
   background-color: #32373c;
@@ -284,9 +286,23 @@
   flex-wrap: wrap
 }
 
-@media (min-width:782px) {
+@media (max-width:782px) {
   .wp-block-columns {
     flex-wrap: nowrap
+  }
+
+  #countdown{
+    display: none;
+  }
+}
+
+@media (max-width:375px) {
+  .wp-block-columns {
+    flex-wrap: nowrap
+  }
+
+  #countdown{
+    display: none;
   }
 }
 
